@@ -156,6 +156,84 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-java第一章学习内容" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/29/java%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%AD%A6%E4%B9%A0%E5%86%85%E5%AE%B9/">java第一章学习内容</a>
+    </h1>
+  
+
+        
+        <a href="/2020/01/29/java%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%AD%A6%E4%B9%A0%E5%86%85%E5%AE%B9/" class="archive-article-date">
+  	<time datetime="2020-01-29T06:47:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>第一节  java程序的编译阶段</p>
+<p>必须在硬盘上面创建一个文件：xxx.java（源文件），然后用JDK当中自带的javac.exe编译源文件的内容（检查语法），编译成功之后就会生成一个xxx.class（字节码文件）。</p>
+<p>注意：一个java源文件可以生成多个.class文件；class文件生成之后，java源文件删除并不会影响java程序执行。但是一般java源文件不要删除，因为class文件最终执行效果可能不是我想要的，那么这个时候需要回头再重新修改java源文件，然后再编译生成新的class文件。</p>
+<p>第二节  java程序的运行阶段</p>
+<p>用JDK当中自带的java.exe运行，输入java 类名（类名是编译之后的xxx.class,当时运行的时候不要写成java xxx.class，这是错误学法！！！），使用java.exe会启动java虚拟机（jvm），jvm会启动类加载器ClassLoader,ClassLoader会去硬盘上搜索xxx.class文件，找到该文件则将该字节码文件装载到jvm当中，jvm将xxx.class字节码文件解释成二进制数据，然后操作系统执行二进制和底层硬件平台进行交互。</p>
+<p>jdk：java开发工具包； jre：java运行时环境； jvm：java虚拟机，java程序最终时运行在java虚拟机上的。</p>
+<p>第三节  注释和嵌入式文档</p>
+<p>单行注释：//单行注释，只注释当前行</p>
+<p>多行注释：/*<br>        多行注释<br>      */</p>
+<p>javadoc注释：/**<br>          *<br>          *   javadoc注释<br>          *<br>           *<br>          */<br>javadoc用于描述类或者方法的作用。</p>
+<p>注意：javadoc只能为public（公共）和protected（受保护）成员进行文档注释。private（私有）和包内可访问成员的注释会被忽略，所以输出结果中看不到它们（不过可以用-private进行标记，以便把priva成员的注释也包含在内）。</p>
+<p>基本注释（必须加）：类（接口）、构造函数、方法、全局变量、字段／属性；备注：简单的代码做简单注释，，另外，持久化对象或VO对象的getter、setter方法不需加注释。<br>特殊注释（必须加）：典型算法、在代码不明晰处、在代码修改处、在循环和逻辑分支组成的的代码中、为他人提供的接口。</p>
+<p>javadoc注释详解：<a href="https://blog.csdn.net/vbirdbest/article/details/80296136" target="_blank" rel="noopener">https://blog.csdn.net/vbirdbest/article/details/80296136</a></p>
+<p>第四节  public class和class区别</p>
+<p>一个java源文件中最多只能有一个public类，当有一个public类时，public类名必须要和源文件名一致，否者会编译错误；一个java源文件可以有多个class类，但是class和public class必须要有一个main方法。</p>
+<p>参考视频：<a href="https://www.bilibili.com/video/av11361088?from=search&amp;seid=2731008120032424980" target="_blank" rel="noopener">https://www.bilibili.com/video/av11361088?from=search&amp;seid=2731008120032424980</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/01/29/java%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%AD%A6%E4%B9%A0%E5%86%85%E5%AE%B9/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-这三天过的比三年还长" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
